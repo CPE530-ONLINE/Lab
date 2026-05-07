@@ -1,0 +1,249 @@
+   1               		.file	"hal.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__RAMPZ__ = 0x3b
+   6               	__CCP__ = 0x34
+   7               	__tmp_reg__ = 0
+   8               	__zero_reg__ = 1
+   9               		.text
+  10               	.Ltext0:
+  11               		.cfi_sections	.debug_frame
+  12               		.file 1 ".././hal/hal.c"
+  13               		.weak	led_ok
+  15               	led_ok:
+  16               	.LVL0:
+  17               	.LFB72:
+   1:.././hal/hal.c **** /*
+   2:.././hal/hal.c ****     This file is part of the ChipWhisperer Example Targets
+   3:.././hal/hal.c ****     Copyright (C) 2012-2015 NewAE Technology Inc.
+   4:.././hal/hal.c **** 
+   5:.././hal/hal.c ****     This program is free software: you can redistribute it and/or modify
+   6:.././hal/hal.c ****     it under the terms of the GNU General Public License as published by
+   7:.././hal/hal.c ****     the Free Software Foundation, either version 3 of the License, or
+   8:.././hal/hal.c ****     (at your option) any later version.
+   9:.././hal/hal.c **** 
+  10:.././hal/hal.c ****     This program is distributed in the hope that it will be useful,
+  11:.././hal/hal.c ****     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  12:.././hal/hal.c ****     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  13:.././hal/hal.c ****     GNU General Public License for more details.
+  14:.././hal/hal.c **** 
+  15:.././hal/hal.c ****     You should have received a copy of the GNU General Public License
+  16:.././hal/hal.c ****     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  17:.././hal/hal.c **** */
+  18:.././hal/hal.c **** 
+  19:.././hal/hal.c **** #include "hal.h"
+  20:.././hal/hal.c **** 
+  21:.././hal/hal.c **** __attribute__((weak)) void led_ok(unsigned int status)
+  22:.././hal/hal.c **** {
+  18               		.loc 1 22 1 view -0
+  19               		.cfi_startproc
+  20               	/* prologue: function */
+  21               	/* frame size = 0 */
+  22               	/* stack size = 0 */
+  23               	.L__stack_usage = 0
+  23:.././hal/hal.c **** }
+  24               		.loc 1 23 1 view .LVU1
+  25               	/* epilogue start */
+  26 0000 0895      		ret
+  27               		.cfi_endproc
+  28               	.LFE72:
+  30               		.weak	led_error
+  32               	led_error:
+  33               	.LFB83:
+  34               		.cfi_startproc
+  24:.././hal/hal.c **** 
+  25:.././hal/hal.c **** __attribute__((weak)) void led_error(unsigned int status)
+  35               		.loc 1 25 28 view .LVU2
+  36               	/* prologue: function */
+  37               	/* frame size = 0 */
+  38               	/* stack size = 0 */
+  39               	.L__stack_usage = 0
+  40               	/* epilogue start */
+  41 0002 0895      		ret
+  42               		.cfi_endproc
+  43               	.LFE83:
+  45               		.weak	_close
+  47               	_close:
+  48               	.LFB74:
+  26:.././hal/hal.c **** {
+  27:.././hal/hal.c **** }
+  28:.././hal/hal.c **** 
+  29:.././hal/hal.c **** #ifdef __GNUC__
+  30:.././hal/hal.c **** #if ((__GNUC__ > 11) || \
+  31:.././hal/hal.c ****      ((__GNUC__ == 11) && (__GNUC_MINOR__ >= 3)))
+  32:.././hal/hal.c **** __attribute__((weak)) void _close() {}
+  49               		.loc 1 32 37 view -0
+  50               		.cfi_startproc
+  51               	/* prologue: function */
+  52               	/* frame size = 0 */
+  53               	/* stack size = 0 */
+  54               	.L__stack_usage = 0
+  55               		.loc 1 32 38 view .LVU4
+  56               	/* epilogue start */
+  57 0004 0895      		ret
+  58               		.cfi_endproc
+  59               	.LFE74:
+  61               		.weak	_fstat
+  63               	_fstat:
+  64               	.LFB85:
+  65               		.cfi_startproc
+  33:.././hal/hal.c **** __attribute__((weak)) void _fstat() {}
+  66               		.loc 1 33 28 view .LVU5
+  67               	/* prologue: function */
+  68               	/* frame size = 0 */
+  69               	/* stack size = 0 */
+  70               	.L__stack_usage = 0
+  71               	/* epilogue start */
+  72 0006 0895      		ret
+  73               		.cfi_endproc
+  74               	.LFE85:
+  76               		.weak	_getpid
+  78               	_getpid:
+  79               	.LFB87:
+  80               		.cfi_startproc
+  34:.././hal/hal.c **** __attribute__((weak)) void _getpid() {}
+  81               		.loc 1 34 28 view .LVU6
+  82               	/* prologue: function */
+  83               	/* frame size = 0 */
+  84               	/* stack size = 0 */
+  85               	.L__stack_usage = 0
+  86               	/* epilogue start */
+  87 0008 0895      		ret
+  88               		.cfi_endproc
+  89               	.LFE87:
+  91               		.weak	_isatty
+  93               	_isatty:
+  94               	.LFB89:
+  95               		.cfi_startproc
+  35:.././hal/hal.c **** __attribute__((weak)) void _isatty() {}
+  96               		.loc 1 35 28 view .LVU7
+  97               	/* prologue: function */
+  98               	/* frame size = 0 */
+  99               	/* stack size = 0 */
+ 100               	.L__stack_usage = 0
+ 101               	/* epilogue start */
+ 102 000a 0895      		ret
+ 103               		.cfi_endproc
+ 104               	.LFE89:
+ 106               		.weak	_kill
+ 108               	_kill:
+ 109               	.LFB91:
+ 110               		.cfi_startproc
+  36:.././hal/hal.c **** __attribute__((weak)) void _kill() {}
+ 111               		.loc 1 36 28 view .LVU8
+ 112               	/* prologue: function */
+ 113               	/* frame size = 0 */
+ 114               	/* stack size = 0 */
+ 115               	.L__stack_usage = 0
+ 116               	/* epilogue start */
+ 117 000c 0895      		ret
+ 118               		.cfi_endproc
+ 119               	.LFE91:
+ 121               		.weak	_lseek
+ 123               	_lseek:
+ 124               	.LFB93:
+ 125               		.cfi_startproc
+  37:.././hal/hal.c **** __attribute__((weak)) void _lseek() {}
+ 126               		.loc 1 37 28 view .LVU9
+ 127               	/* prologue: function */
+ 128               	/* frame size = 0 */
+ 129               	/* stack size = 0 */
+ 130               	.L__stack_usage = 0
+ 131               	/* epilogue start */
+ 132 000e 0895      		ret
+ 133               		.cfi_endproc
+ 134               	.LFE93:
+ 136               		.weak	_read
+ 138               	_read:
+ 139               	.LFB95:
+ 140               		.cfi_startproc
+  38:.././hal/hal.c **** __attribute__((weak)) void _read() {}
+ 141               		.loc 1 38 28 view .LVU10
+ 142               	/* prologue: function */
+ 143               	/* frame size = 0 */
+ 144               	/* stack size = 0 */
+ 145               	.L__stack_usage = 0
+ 146               	/* epilogue start */
+ 147 0010 0895      		ret
+ 148               		.cfi_endproc
+ 149               	.LFE95:
+ 151               		.weak	_write
+ 153               	_write:
+ 154               	.LFB97:
+ 155               		.cfi_startproc
+  39:.././hal/hal.c **** __attribute__((weak)) void _write() {}
+ 156               		.loc 1 39 28 view .LVU11
+ 157               	/* prologue: function */
+ 158               	/* frame size = 0 */
+ 159               	/* stack size = 0 */
+ 160               	.L__stack_usage = 0
+ 161               	/* epilogue start */
+ 162 0012 0895      		ret
+ 163               		.cfi_endproc
+ 164               	.LFE97:
+ 166               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 hal.c
+     /tmp/ccDJ0L05.s:2      *ABS*:0000003e __SP_H__
+     /tmp/ccDJ0L05.s:3      *ABS*:0000003d __SP_L__
+     /tmp/ccDJ0L05.s:4      *ABS*:0000003f __SREG__
+     /tmp/ccDJ0L05.s:5      *ABS*:0000003b __RAMPZ__
+     /tmp/ccDJ0L05.s:6      *ABS*:00000034 __CCP__
+     /tmp/ccDJ0L05.s:7      *ABS*:00000000 __tmp_reg__
+     /tmp/ccDJ0L05.s:8      *ABS*:00000001 __zero_reg__
+     /tmp/ccDJ0L05.s:15     .text:00000000 led_ok
+     /tmp/ccDJ0L05.s:18     .text:00000000 .Loc.0
+     /tmp/ccDJ0L05.s:19     .text:00000000 L0
+     /tmp/ccDJ0L05.s:24     .text:00000000 .Loc.1
+     /tmp/ccDJ0L05.s:27     .text:00000002 L0
+     /tmp/ccDJ0L05.s:32     .text:00000002 led_error
+     /tmp/ccDJ0L05.s:34     .text:00000002 L0
+     /tmp/ccDJ0L05.s:35     .text:00000002 .Loc.2
+     /tmp/ccDJ0L05.s:42     .text:00000004 L0
+     /tmp/ccDJ0L05.s:47     .text:00000004 _close
+     /tmp/ccDJ0L05.s:49     .text:00000004 .Loc.3
+     /tmp/ccDJ0L05.s:50     .text:00000004 L0
+     /tmp/ccDJ0L05.s:55     .text:00000004 .Loc.4
+     /tmp/ccDJ0L05.s:58     .text:00000006 L0
+     /tmp/ccDJ0L05.s:63     .text:00000006 _fstat
+     /tmp/ccDJ0L05.s:65     .text:00000006 L0
+     /tmp/ccDJ0L05.s:66     .text:00000006 .Loc.5
+     /tmp/ccDJ0L05.s:73     .text:00000008 L0
+     /tmp/ccDJ0L05.s:78     .text:00000008 _getpid
+     /tmp/ccDJ0L05.s:80     .text:00000008 L0
+     /tmp/ccDJ0L05.s:81     .text:00000008 .Loc.6
+     /tmp/ccDJ0L05.s:88     .text:0000000a L0
+     /tmp/ccDJ0L05.s:93     .text:0000000a _isatty
+     /tmp/ccDJ0L05.s:95     .text:0000000a L0
+     /tmp/ccDJ0L05.s:96     .text:0000000a .Loc.7
+     /tmp/ccDJ0L05.s:103    .text:0000000c L0
+     /tmp/ccDJ0L05.s:108    .text:0000000c _kill
+     /tmp/ccDJ0L05.s:110    .text:0000000c L0
+     /tmp/ccDJ0L05.s:111    .text:0000000c .Loc.8
+     /tmp/ccDJ0L05.s:118    .text:0000000e L0
+     /tmp/ccDJ0L05.s:123    .text:0000000e _lseek
+     /tmp/ccDJ0L05.s:125    .text:0000000e L0
+     /tmp/ccDJ0L05.s:126    .text:0000000e .Loc.9
+     /tmp/ccDJ0L05.s:133    .text:00000010 L0
+     /tmp/ccDJ0L05.s:138    .text:00000010 _read
+     /tmp/ccDJ0L05.s:140    .text:00000010 L0
+     /tmp/ccDJ0L05.s:141    .text:00000010 .Loc.10
+     /tmp/ccDJ0L05.s:148    .text:00000012 L0
+     /tmp/ccDJ0L05.s:153    .text:00000012 _write
+     /tmp/ccDJ0L05.s:155    .text:00000012 L0
+     /tmp/ccDJ0L05.s:156    .text:00000012 .Loc.11
+     /tmp/ccDJ0L05.s:163    .text:00000014 L0
+     /tmp/ccDJ0L05.s:167    .text:00000014 L0
+                     .debug_frame:00000000 L0
+     /tmp/ccDJ0L05.s:336    .debug_abbrev:00000000 .Ldebug_abbrev0
+     /tmp/ccDJ0L05.s:10     .text:00000000 .Ltext0
+     /tmp/ccDJ0L05.s:166    .text:00000014 .Letext0
+     /tmp/ccDJ0L05.s:520    .debug_line:00000000 .Ldebug_line0
+     /tmp/ccDJ0L05.s:17     .text:00000000 .LFB72
+     /tmp/ccDJ0L05.s:28     .text:00000002 .LFE72
+     /tmp/ccDJ0L05.s:48     .text:00000004 .LFB74
+     /tmp/ccDJ0L05.s:59     .text:00000006 .LFE74
+     /tmp/ccDJ0L05.s:168    .debug_info:00000000 .Ldebug_info0
+
+NO UNDEFINED SYMBOLS
