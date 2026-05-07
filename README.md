@@ -128,6 +128,38 @@ jupyter lab
 
 ## Troubleshooting
 
+### Required Compilers for Lab 1.2
+
+Lab 1.2 checks for two command-line tools:
+
+- `make`
+- `arm-none-eabi-gcc`
+
+You can verify both after installation with:
+
+```bash
+make --version
+arm-none-eabi-gcc -v
+```
+
+#### Windows
+
+For Windows, the simplest approach is usually:
+
+- Install `make` through MSYS2: https://www.msys2.org/
+- Install the Arm Embedded GCC toolchain from Arm: https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads
+
+After installing MSYS2, open an MSYS2 shell and install `make` with its package manager. After installing the Arm toolchain, make sure the toolchain's `bin` directory is added to your `PATH` so `arm-none-eabi-gcc` works from the command line.
+
+#### macOS
+
+For macOS:
+
+- Install Apple's Command Line Tools for `make`: https://developer.apple.com/xcode/resources/
+- Install the Arm Embedded GCC toolchain from Arm: https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads
+
+On macOS, `make` is typically provided by the Xcode Command Line Tools. If you use Homebrew, you can also install supporting packages there, but the official Arm GNU Toolchain download above is the most direct source for `arm-none-eabi-gcc`.
+
 ### ChipWhisperer Is Not Detected
 
 - Reconnect the USB cable.
