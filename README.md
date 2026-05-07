@@ -98,14 +98,6 @@ Contains additional supporting material for the labs, including helper notebooks
 
 Contains MCU firmware sources, build files, and ChipWhisperer support code. This area is used by labs that compile or program target firmware.
 
-### `support/mcu/simpleserial-base-lab2/`
-
-Contains the Lab 2 SimpleSerial firmware and generated build artifacts for the ChipWhisperer Nano target.
-
-### `README.md`
-
-This file. It provides the top-level setup instructions and a map of the repository.
-
 ## Typical Workflow
 
 Once the repository is set up, the usual workflow is:
